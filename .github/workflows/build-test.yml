@@ -2,6 +2,7 @@ name: Build Test
 
 # Trigger on every push and pull request
 on:
+  workflow_dispatch:
   push:
     branches: [ main, develop, 'release/**', 'feature/**' ]
   pull_request:
